@@ -1,0 +1,130 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general text styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for each section */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #ff0000; /* Red */
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* About Me Section */
+.about {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.about h2 {
+    color: #ff0000; /* Red */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+}
+
+/* Skills Section */
+.skills {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.skills h2 {
+    color: #ff0000; /* Red */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.skills li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Job Description Section */
+.job-description {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.job-description h2 {
+    color: #ff0000; /* Red */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.job-description p {
+    font-size: 1.1em;
+}
+
+/* Certification Section */
+.certification {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.certification h2 {
+    color: #ff0000; /* Red */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.certification a {
+    font-size: 1.1em;
+    color: #000;
+    text-decoration: none;
+}
+
+.certification a:hover {
+    color: #ff0000; /* Red */
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ff0000; /* Red */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
