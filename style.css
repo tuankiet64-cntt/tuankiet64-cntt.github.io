@@ -21,12 +21,14 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #ff4e50, #ff9d00); /* Red-Orange Gradient */
+    background: url('https://images.unsplash.com/photo-1565667233-98e47849e575?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg2OXwwfDF8c2VhcmNofDl8fHBocCUyMGJhdGhlY2FtcHxlbnwwfHx8fDE2NTk5NjcwODg&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
     text-align: center;
     position: relative;
-    border-bottom: 10px solid #ff0000;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
 }
 
 header .avatar-container {
@@ -34,11 +36,12 @@ header .avatar-container {
 }
 
 header .avatar {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header .intro {
@@ -46,36 +49,38 @@ header .intro {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 header p {
     font-size: 1.5em;
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header .btn-main {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #ff0000;
+    padding: 12px 30px;
+    background-color: #ff0000;
+    color: #fff;
     border: none;
     border-radius: 25px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     transition: 0.3s;
     text-decoration: none;
 }
 
 header .btn-main:hover {
-    background-color: #ff0000;
-    color: #fff;
-    transform: scale(1.05);
+    background-color: #ff4e50;
+    transform: scale(1.1);
 }
 
 /* About Me Section */
 .about {
     padding: 50px 0;
-    background-color: #f4f4f4;
+    background-color: #f7f7f7;
+    text-align: center;
 }
 
 .about h2 {
@@ -99,27 +104,28 @@ header .btn-main:hover {
     color: #ff0000;
     font-size: 2.5em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .skills-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    justify-items: center;
 }
 
 .skill-item {
-    width: 200px;
-    padding: 20px;
-    text-align: center;
     background-color: #f4f4f4;
-    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
     transition: 0.3s;
-    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-item i {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 3.5em;
+    margin-bottom: 15px;
 }
 
 .skill-item p {
@@ -129,13 +135,15 @@ header .btn-main:hover {
 .skill-item:hover {
     background-color: #ff0000;
     color: #fff;
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Job Description Section */
 .job-description {
     background-color: #f4f4f4;
     padding: 50px 0;
+    text-align: center;
 }
 
 .job-description h2 {
@@ -146,6 +154,7 @@ header .btn-main:hover {
 
 .job-description p {
     font-size: 1.2em;
+    line-height: 1.8;
 }
 
 /* Certification Section */
@@ -163,7 +172,7 @@ header .btn-main:hover {
 
 .certification a {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 12px 30px;
     background-color: #ff0000;
     color: #fff;
     border-radius: 30px;
@@ -193,4 +202,16 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
