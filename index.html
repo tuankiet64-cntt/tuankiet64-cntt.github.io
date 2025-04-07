@@ -9,15 +9,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <!-- Avatar Image -->
-            <img src="https://via.placeholder.com/150" alt="Trần Tuấn Kiệt" class="avatar">
-            <h1>Trần Tuấn Kiệt</h1>
-            <p>Leader PHP Development <i class="fas fa-cogs"></i></p>
+            <div class="avatar-container">
+                <!-- Avatar Image -->
+                <img src="https://via.placeholder.com/150" alt="Trần Tuấn Kiệt" class="avatar">
+            </div>
+            <div class="intro">
+                <h1>Trần Tuấn Kiệt</h1>
+                <p>Leader PHP Development</p>
+                <a href="#contact" class="btn-main">Contact Me</a>
+            </div>
         </div>
     </header>
 
+    <!-- About Me Section -->
     <section class="about">
         <div class="container">
             <h2>About Me <i class="fas fa-user"></i></h2>
@@ -25,20 +32,40 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section class="skills">
         <div class="container">
             <h2>Skills <i class="fas fa-tools"></i></h2>
-            <ul>
-                <li><i class="fab fa-php"></i> PHP</li>
-                <li><i class="fas fa-database"></i> Redis</li>
-                <li><i class="fab fa-laravel"></i> Laravel</li>
-                <li><i class="fas fa-exchange-alt"></i> RabbitMQ</li>
-                <li><i class="fas fa-database"></i> MySQL</li>
-                <li><i class="fab fa-git"></i> Git</li>
-            </ul>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <p>Redis</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-laravel"></i>
+                    <p>Laravel</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <p>RabbitMQ</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git"></i>
+                    <p>Git</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Job Description Section -->
     <section class="job-description">
         <div class="container">
             <h2>Job Description <i class="fas fa-briefcase"></i></h2>
@@ -46,15 +73,17 @@
         </div>
     </section>
 
+    <!-- Certification Section -->
     <section class="certification">
         <div class="container">
             <h2>Certification <i class="fas fa-certificate"></i></h2>
             <p>I'm certified in Laravel development, which proves my expertise in building scalable and maintainable web applications using Laravel framework.</p>
-            <a href="https://verifier.certificationforlaravel.org/9bf53a81-a54b-481d-98b3-a77ebd38338f" target="_blank">View My Certification</a>
+            <a href="https://verifier.certificationforlaravel.org/9bf53a81-a54b-481d-98b3-a77ebd38338f" target="_blank" class="btn-main">View Certification</a>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer id="contact">
         <div class="container">
             <p>Contact me at <a href="mailto:tuankiet64@example.com">tuankiet64@example.com</a></p>
         </div>

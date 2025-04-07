@@ -1,140 +1,193 @@
-/* Reset some default styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and general text styling */
+/* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #fff;
     color: #333;
     line-height: 1.6;
 }
 
-/* Container for each section */
+/* Container */
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 /* Header */
 header {
-    background-color: #000;
+    background: linear-gradient(135deg, #ff4e50, #ff9d00); /* Red-Orange Gradient */
     color: #fff;
-    padding: 40px 0;
+    padding: 100px 0;
     text-align: center;
     position: relative;
+    border-bottom: 10px solid #ff0000;
+}
+
+header .avatar-container {
+    margin-bottom: 20px;
 }
 
 header .avatar {
-    border-radius: 50%;
     width: 150px;
     height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
+    border: 5px solid #fff;
+}
+
+header .intro {
+    margin-top: 20px;
 }
 
 header h1 {
     font-size: 3em;
-    color: #ff0000; /* Red */
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.5em;
-    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+header .btn-main {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ff0000;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+header .btn-main:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transform: scale(1.05);
 }
 
 /* About Me Section */
 .about {
-    padding: 40px 0;
-    background-color: #f8f8f8;
+    padding: 50px 0;
+    background-color: #f4f4f4;
 }
 
 .about h2 {
-    color: #ff0000; /* Red */
-    font-size: 2em;
+    color: #ff0000;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .about p {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    line-height: 1.8;
 }
 
 /* Skills Section */
 .skills {
-    padding: 40px 0;
     background-color: #fff;
+    padding: 50px 0;
 }
 
 .skills h2 {
-    color: #ff0000; /* Red */
-    font-size: 2em;
+    color: #ff0000;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.skills ul {
-    list-style-type: none;
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.skills li {
-    font-size: 1.1em;
+.skill-item {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.skill-item i {
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
-.skills li i {
-    margin-right: 10px;
+.skill-item p {
+    font-size: 1.2em;
+}
+
+.skill-item:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transform: scale(1.05);
 }
 
 /* Job Description Section */
 .job-description {
-    padding: 40px 0;
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
+    padding: 50px 0;
 }
 
 .job-description h2 {
-    color: #ff0000; /* Red */
-    font-size: 2em;
+    color: #ff0000;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .job-description p {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 /* Certification Section */
 .certification {
-    padding: 40px 0;
+    padding: 50px 0;
     background-color: #fff;
+    text-align: center;
 }
 
 .certification h2 {
-    color: #ff0000; /* Red */
-    font-size: 2em;
+    color: #ff0000;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .certification a {
-    font-size: 1.1em;
-    color: #000;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 30px;
     text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: 0.3s;
 }
 
 .certification a:hover {
-    color: #ff0000; /* Red */
+    background-color: #ff4e50;
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
     background-color: #000;
     color: #fff;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
 footer a {
-    color: #ff0000; /* Red */
+    color: #ff0000;
     text-decoration: none;
 }
 
