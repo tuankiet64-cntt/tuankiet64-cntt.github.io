@@ -53,14 +53,46 @@ body {
     margin-bottom: 10px;
   }
   
-  .skills ul, .contact ul {
-    list-style-type: none;
-    padding: 0;
+  /* Skills Section Styling */
+  .skills {
+    text-align: center;
   }
   
-  .skills li, .contact li {
-    font-size: 1.2em;
-    margin: 10px 0;
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .skill-item {
+    flex: 1;
+    max-width: 150px;
+    margin: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .skill-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-item p {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   /* Footer */
