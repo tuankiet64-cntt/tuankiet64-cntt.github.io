@@ -25,6 +25,15 @@ header {
     color: #fff;
     padding: 40px 0;
     text-align: center;
+    position: relative;
+}
+
+header .avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -72,6 +81,10 @@ header p {
 .skills li {
     font-size: 1.1em;
     margin-bottom: 10px;
+}
+
+.skills li i {
+    margin-right: 10px;
 }
 
 /* Job Description Section */
